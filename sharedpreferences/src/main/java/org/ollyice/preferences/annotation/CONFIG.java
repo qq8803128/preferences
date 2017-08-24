@@ -1,0 +1,21 @@
+package org.ollyice.preferences.annotation;
+
+import android.content.Context;
+
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+/**
+ * Created by Administrator on 2017/8/24.
+ */
+
+@Documented
+@Target({ElementType.TYPE})
+@Retention(RetentionPolicy.RUNTIME)
+public @interface CONFIG {
+    String name() default "preferences";
+    int mode() default Context.MODE_PRIVATE;
+}

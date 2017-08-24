@@ -1,0 +1,8 @@
+apply plugin: 'java'
+
+dependencies {
+    compile files('D:\\android-sdk\\platforms\\android-25\\android.jar')
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
